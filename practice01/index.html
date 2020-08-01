@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arrOfStrs = []
+        let str = ''
+        function strLength(str, arrOfStrs) {
+            let lengthReq = [];
+            const newArr = arrOfStrs.map((a) => {
+                if (a.length <= str.length) {
+                    return null
+                } else {
+                    lengthReq.push(a)
+                } 
+            })       
+            return lengthReq;
+        }
+    </script>
+</body>
+</html>
