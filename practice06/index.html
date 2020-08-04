@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 6</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script>
+        const div = document.querySelector('#root')
+
+        function fibonacci (num) {
+          let arr = [];
+          const last = arr.pop()
+          for (let i = 0; i <= num; i++) {
+            arr.push(i + last)
+          }
+          return arr;
+        }
+    </script>
+</body>
+</html>
