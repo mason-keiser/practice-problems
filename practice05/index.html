@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+// THIS FUNCTION WILL COUNT TO 100: LOOKING FOR MULT OF 3 & 5
+       function count () {
+           let num = []
+           for (let i = 0; i <= 100; i++) {
+               if (!(i % 3) && (i % 5)) {
+                   num.push("fizz")
+               } else if (!(i % 5) && (i % 3)) {
+                   num.push('Buzz')
+               } else if (!(i % 3) && !(i % 5)){
+                   num.push("Fizzbuzz")
+               } else {
+                   num.push(i)
+               }
+           }
+           for (let j = 0; j < num.length; j++) {
+               console.log(num[j])
+           }
+          // return num
+       }
+
+    </script>
+</body>
+</html>
